@@ -1,0 +1,198 @@
+/* Reset de margem padrão */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: black;
+    background-color: blueviolet;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabecalho */
+
+header{ /* Aplicar estilos de header também ao footer */
+    text-align: center;
+    width: 1558px;
+    height: 80px;
+    align-items: center;
+    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header{
+    background-color: white;
+}
+
+.footer {
+    background-color: #000;
+    width: 1558px;
+    height: 80px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+
+.header {
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    padding-right: 12pc;
+}
+
+.entrarCadastro{
+    margin-right: 10pc;
+   
+}
+
+.text-conteiner{
+    margin-left: 5pc;
+}
+
+.imagem_person {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.entrarCadastro {
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+.xports {
+    font-size: 36px;
+    font-weight: bold;
+    transition: color 0.7s;
+}
+
+.comprasCarrinhos {
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+.imagem_header {
+    width: 40px;
+    height: 40px;
+    transition: width 0.2s, height 0.2s;
+}
+
+
+
+.paragrafo {
+    margin-bottom: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #000;
+}
+
+/* Conteiner-Fotos */
+
+.containerFotos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    
+}
+
+.columnOne,
+.columnTwo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.camisaManchester,
+.shortMasc,
+.tenisCorrida,
+.bolaCopa {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* FOOTER */
+
+.footer-content {
+    width: 100%;
+    max-width: 1200px; /* Define a largura máxima para o conteúdo */
+    margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+    display: flex; /* Reintroduza display: flex aqui para alinhar os elementos internos */
+    justify-content: space-between; /* Espaçamento uniforme entre elementos */
+    align-items: center; /* Alinha verticalmente no centro */
+}
+
+.social-icons a {
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.images_footer {
+    max-height: 40px;
+    transition: transform 0.2s;
+    margin-right: 12pc;
+    
+}
+
+.contatos{
+    color: #ddd;
+    margin-right: 12pc;
+}
+
+.images_footer:hover {
+    transform: scale(1.2);
+}
+
+
+.footer-text p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.aplic{
+    color: #ddd;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+
+/*------------*/
+
+.camisaManchester{
+    transition: 0.2s;
+}
+
+.camisaManchester:hover{
+    transform: scale(0.9);
+}
+
+.shortMasc{
+    transition: 0.2s;
+}
+
+.shortMasc:hover{
+    transform: scale(0.9);
+}
+
+.tenisCorrida{
+    transition: 0.2s;
+}
+
+.tenisCorrida:hover{
+    transform: scale(0.9);
+}
+
+.bolaCopa{
+    transition: 0.2s;
+}
+
+.bolaCopa:hover{
+    transform: scale(0.9);
+}

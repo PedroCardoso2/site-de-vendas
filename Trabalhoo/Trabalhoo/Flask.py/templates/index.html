@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Xportszone</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='imagem/iconBol.png') }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <form>
+        <header>
+            <div class="header">
+                <img class="imagem_person" src="{{ url_for('static', filename='imagem/person.svg') }}" />
+                
+                    <p class="entrarCadastro">Entrar/Cadastrar-se</p>
+
+                    <h1 class="xports" id="xports">XPorts Zone</h1>
+
+
+                    <p class="comprasCarrinhos">Suas compras/Carrinho</p>
+                
+                <a><img class="imagem_header" src="{{ url_for('static', filename='imagem/cart.png') }}" /></a>
+            </div>
+        </header>
+
+        <div class="containerFotos">
+            <div class="columnOne">
+                <img class="camisaManchester" src="{{ url_for('static', filename='imagem/camisaMan.jpeg') }}">
+                <p class="paragrafo">Camisa Manchester United Pré Jogo 22/23/ $120</p>
+
+                <img class="shortMasc" src="{{ url_for('static', filename='imagem/bermudas.jpg') }}">
+                <p class="paragrafo">Short Masculino Esportivo Futebol Praia, Casual / $25</p>
+            </div>
+            <div class="columnTwo">
+                <img class="tenisCorrida" src="{{ url_for('static', filename='imagem/sapato.jpeg') }}">
+                <p class="paragrafo">Tênis De Corrida Nike Vermelho E Preto / $80</p>
+
+                <img class="bolaCopa" src="{{ url_for('static', filename='imagem/bola.jpeg') }}">
+                <p class="paragrafo">Bola da Copa 2023 / $150</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <h2 class="contatos">CONTATOS</h2>
+            <img class="images_footer" src="{{ url_for('static', filename='imagem/whatsapp.png') }}" alt="whatsapp">
+            <img class="images_footer" src="{{ url_for('static', filename='imagem/instagram.png') }}" alt="instagram">
+            <img class="images_footer" src="{{ url_for('static', filename='imagem/facebook.png') }}" alt="facebook">
+            <img class="images_footer" src="{{ url_for('static', filename='imagem/gmail.png') }}" alt="gmail">
+            
+        </div>
+    </form>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const xportsElement = document.getElementById("xports");
+            const carVends = document.querySelector(".imagem_header");
+
+            carVends.addEventListener("mouseenter", () => {
+                carVends.style.width = "45px";
+                carVends.style.height = "45px";
+            });
+
+            carVends.addEventListener("mouseleave", () => {
+                carVends.style.width = "40px";
+                carVends.style.height = "40px";
+            });
+
+            xportsElement.addEventListener("mouseenter", function () {
+                // Quando o mouse entra no elemento
+                xportsElement.style.color = "#ccc";
+            });
+    
+            xportsElement.addEventListener("mouseleave", function () {
+                // Quando o mouse deixa o elemento
+                xportsElement.style.color = ""; 
+            });
+        });
+    </script>
+    
+   
+</body>
+
+</html>
